@@ -1,0 +1,229 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.bgcolor
+{
+    background:#AEAECB;  
+}
+.hero{
+    width:  100%;
+   margin-top: -8%;
+    min-height: 100vh;
+    background:#AEAECB;
+    background-position: center;
+    background-size: cover;
+    padding: 10px 10%;
+    overflow: hidden;
+    position: relative;
+
+}
+nav{
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+nav ul li{
+
+    display: inline-block;
+    list-style: none;
+    margin: 10px 15px;
+
+}
+nav ul li a{
+
+   text-decoration: none;
+   color: green;    
+   font-weight: 400;
+    
+}
+.login-btn{
+    text-decoration: none;
+    margin-right:  15px ;
+    color: green; 
+    font-weight: 400;  
+    width: 25%;
+    margin-top: -4%;
+    
+    
+}
+.btn{
+
+    display: inline-block;
+    text-decoration: none;
+    padding: 2px 40px;
+    color: #ffffff;
+    
+    background-image: linear-gradient(45deg, #05c43e, #033a11);
+    font-size: 14px;
+    border-radius: 30px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    transition: 0.5s;
+    height: 45px ;
+  
+    margin-top: -8%;
+ 
+   
+
+}
+.content{
+
+    margin-top: 10%;
+    max-width: 600px;
+}
+.content h1{
+    font-size: 70px;
+    color:#011d04;
+
+
+
+}
+.content p{
+margin:10px 0 30px;
+ color: #033a11;
+animation-delay: 0.5s;
+
+}
+.button-group{
+
+    display: flex;
+    justify-content: center;
+    margin-top: -2;
+}
+.logo {
+    width: 45%;
+    height: 60%;
+    margin-left: -10%;
+    
+}
+.lowerText{
+
+    font-size: 70px;
+    margin-top: -40px;
+    color: #033a11;
+
+  
+    
+}
+.content .btn{
+padding: 15px 80px;
+font-size: 16px;
+animation-delay: 1s;
+}
+.btn:hover{
+    border-top-right-radius: 30px;
+
+}
+
+.anim{
+    opacity: 0;
+    transform: translateY(80px);
+    animation: moveup 0.5s linear forwards;
+
+}
+@keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.feature-img {
+    display: inline-block;
+    width: 530px;
+   position: absolute;
+   right: 10%;
+   top: 18%;
+   bottom: 3.5%;
+   }
+   
+.feature-img.anim{
+
+animation-delay: 1s;
+}
+.login-btn:hover {
+    color: rgb(1, 53, 1);
+    font-style: italic;
+  }
+
+@media screen and (max-width: 1280px) {
+    .login-btn{
+        text-decoration: none;
+        margin-right:  15px ;
+        color: green; 
+        font-weight: 400;  
+        width: 40%;
+        margin-top: 2%;
+        
+        
+    }
+    
+.content .btn{
+    padding: 5px 110px;
+    font-size: 16px;
+    animation-delay: 1s;
+    width: 100%;
+    height: 25%;
+    }
+    .logo{
+
+        width: 39%;
+        height: 65%;
+        margin-top: 2%;
+    
+        
+    }
+  
+    .content {
+      flex-direction: column;
+      align-items: start; 
+    }
+    .feature-img.anim{
+         width: 45%;
+       animation-delay: 1s;
+       top:4px;
+       margin-bottom: 2px;
+
+      
+      
+   
+       }
+       .lowerText{
+
+        font-size: 50px;
+        margin-top: 85px ;
+        color: #033a11;
+        
+    }.btn{
+        width: 70px;
+        height: 35px;
+            
+            padding:  2px px 10px 10px;
+            color: #ffffff;
+            
+            background-image: linear-gradient(45deg, #05c43e, #033a11);
+            font-size: 10px;
+            border-radius: 20px;
+            border-top-right-radius: 0;
+            border-top-left-radius: 0;
+            transition: 0.5s;
+            
+          
+            
+    }
+  
+    .feature-img {
+      order: 3; /* Change the order of the feature image to appear below the "Join Now" button */
+      margin-top: 100px; 
+    
+    }
+  }
+    
+
+
